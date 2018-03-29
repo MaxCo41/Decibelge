@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="container header">
+            <a class="nav" href="commune.html">Commune</a>
+            <a class="nav" href="membre.html">Enregistrer un son</a>
+        </div>
+    </header>
+
+
+
+
+    <div class="container centrer">
+        <h1 id="titreAccueil">Titre app</h1>
+        <form action="post" action="">
+<!-- une balise select ou input ne peut pas être imbriquée directement dans form -->
+          <select id="inputAccueil" name="listeCommune">
+            <option id="choixCommune" value="http://www.monsite.net/accueil.html">1000 - Bruxelles</option>
+            <option value="http://www.monsite.net/apropos.html">1030-Schaerbeek</option>
+            <option value="http://www.monsite.net/plan.html">1040-Etterbeek</option>
+            <option value="http://www.monsite.net/plan.html">1050-Ixelles</option>
+            <option value="http://www.monsite.net/plan.html">1060-Saint-Gilles</option>
+            <option value="http://www.monsite.net/plan.html">1070-Anderlecht</option>
+            <option value="http://www.monsite.net/plan.html">1080-Molenbeek-St-Jean</option>
+            <option value="http://www.monsite.net/plan.html">1081-Koekelberg</option>
+            <option value="http://www.monsite.net/plan.html">1082-Berchem-Ste-Agathe</option>
+            <option value="http://www.monsite.net/plan.html">1083-Ganshoren</option>
+            <option value="http://www.monsite.net/plan.html">1090-Jette</option>
+            <option value="http://www.monsite.net/plan.html">1160-Auderghem</option>
+            <option value="http://www.monsite.net/plan.html">1170-Watermael-Boitsfort</option>
+            <option value="http://www.monsite.net/plan.html">1140-Evere</option>
+            <option value="http://www.monsite.net/plan.html">1150-Woluwé-St-Pierre</option>
+            <option value="http://www.monsite.net/plan.html">1180-Uccle</option>
+            <option value="http://www.monsite.net/plan.html">1190-Forest</option>
+            <option value="http://www.monsite.net/plan.html">1200-Woluwé-St-Lambert</option>
+            <option value="http://www.monsite.net/contact.html">1210-St Josse-ten-Noode</option>
+          </select>
+        </form>
+      </div>
+
+
+        <div class="map" id="map"></div> <!-- container de la map -->
+
+    </div>
+        </form>
+
+
+<script>
+  function initMap() {
+    var uluru = {lat: 50.8503396, lng: 4.3517103};
+    var maisonMarie = {lat:50.8607254, lgn:4.3835315};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcly7QI1q9c0g31v_iGykq2Yb2SW36480&callback=initMap">
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

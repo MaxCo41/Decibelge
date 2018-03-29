@@ -1,0 +1,139 @@
+
+
+.centrer{
+    text-align:center;
+}
+
+
+@media screen and (max-width: 768px){
+
+
+
+ /*.......................................Header..............................................*/
+
+ body {
+font-family: "Roboto", sans-serif;
+
+}
+
+.header{
+   height:10vh;
+   width:100%;
+   padding-top: 1.4em;
+   /* justify-content: flex-end; */
+   background-color:#140785;
+
+}
+    /*....................................Page d'accueil.....................................*/
+    #titreAccueil{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #inputAccueil{ /*   */
+        background-color: #dad8d8;
+        width: auto;
+        margin-bottom: 40px;
+        }
+    #choixCommune {
+        width: auto;
+    }
+
+    .map { /* Taille de la map */
+        margin: 0 auto;
+        height: 250px;
+        width: 250px;
+        margin-bottom: 15px;
+       }
+
+    /*.................................Page enregistrer son ....................................*/
+    #parentMicro{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        background-color: #6464a9;
+        text-align: center;
+        border-radius: 50%;
+        line-height: 150px;
+        box-shadow: 2px 2px 3px #16232E;
+    }
+    #microBouton{
+        width: 60%;
+    }
+    .titre{
+        margin-bottom: 35px;
+    }
+    #graph{
+        width:60%;
+        height:60%;
+        margin:0 auto;
+    }
+
+    .nav{
+        margin-bottom: 17px;
+        margin-top: 10px;
+        margin-right: 17px;
+    }
+    /*Page commune ============================================*/
+
+    #commune {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 5vh;
+    }
+    .buttonJourNuit {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 5vh;
+    }
+    #buttonJour {
+      margin-right: 15vh;
+      padding: 15px 20px 15px 20px;
+      width: auto;
+      background-color: #007bff;
+      color: white;
+      font-size: 1.5em;
+      border: none;
+    }
+    #buttonNuit {
+      padding: 15px 20px 15px 20px;
+      width: auto;
+      background-color: #007bff;
+      font-size: 1.5em;
+      color: white;
+      border: none;
+    }
+/*Nav bar=======================================================*/
+    .container centrer header {
+      height:10vh;
+      margin-top:2em;
+      padding: 0;
+      width:100%;
+
+    }
+
+    .nav{
+      display: inline;
+      font-size: 14px;
+      color: #FFF;
+      text-transform: uppercase;
+      padding-right: 15px;
+      padding-left: 15px;
+      width:30%;
+      padding-left: 1.5em;
+      /* margin-bottom: 17px;
+      margin-top: 10px;
+      margin-right: 17px; */
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #FFF;
+      font-weight: bold;
+    }
+
+}
